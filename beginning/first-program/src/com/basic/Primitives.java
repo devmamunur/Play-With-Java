@@ -1,4 +1,4 @@
-package com.mamun;
+package com.basic;
 
 public class Primitives {
     public static void main(String[] args) {

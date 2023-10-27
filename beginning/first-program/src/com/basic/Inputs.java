@@ -1,4 +1,4 @@
-package com.mamun;
+package com.basic;
 
 import java.util.Scanner;
 
