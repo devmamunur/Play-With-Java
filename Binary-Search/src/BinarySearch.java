@@ -5,7 +5,7 @@ public class BinarySearch {
         int ans = binarySearch(arr, target);
         System.out.println(ans);
     }
-    //  return the index
+    //  return the index for only shorted array
     // return -1 if it dose not exist
     static  int binarySearch(int[] arr, int target){
         int start = 0;
@@ -13,9 +13,13 @@ public class BinarySearch {
         while (start <= end){
             int mid = start + (end - start) /2 ;
             if(target < arr[mid]){
+                // for asc
                 end = mid -1;
+                // for dsc = start = mid + 1;
             }else if(target > arr[mid]){
+                // for asc
                 start = mid + 1;
+                // for dsc = end = mid -1;
             }else {
                 //ans found
                 return mid;
